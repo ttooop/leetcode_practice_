@@ -24,7 +24,7 @@ Your algorithm should run in O(n) time and uses constant extra space.
 
 **comprehension**
 
-使用hashset，先找到最大值，然后从1挨个遍历查看是否存在，最后返回第一个缺失的值
+使用hashset，先找到最大值，然后从1挨个遍历查看是否存在，并记录在哈希集合中，同时记录nums中最大的数，以便后续循环。最后返回第一个缺失的值
 
 ```
 class Solution {
